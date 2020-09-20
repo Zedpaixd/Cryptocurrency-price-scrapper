@@ -3,8 +3,12 @@ import requests
 
 amount = int(input("How many different coins would you want to be displayed? "))
 
-Website = "https://cryptoprices.com/"
-res = requests.get(Website)
+Website1 = "https://cryptoprices.com/"
+Website2 = "?coins="
+
+# 1 = 1-100  2 = 101-200 ... max 59
+
+res = requests.get(Website1)
 res1 = res.text
 WebsiteData = BeautifulSoup(res1,'lxml')
 
