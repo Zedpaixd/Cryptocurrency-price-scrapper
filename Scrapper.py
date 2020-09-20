@@ -16,6 +16,5 @@ Prices = []
 for i in range (0,int(amount)):
     CoinPrice=__CoinPrice__[i+1].find_all('span')
     Prices.append(CoinPrice[1])
-    
-    print(Prices[i],CoinName[i])
-
+   
+#CoinName[] , CoinPrice[]
