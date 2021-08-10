@@ -7,6 +7,8 @@ Website1 = "https://cryptoprices.com/"
 Website2 = "?coins="
 
 # 1 = 1-100  2 = 101-200 ... max 59
+# Website3 is meant to be used to go through each page
+# kinda WIP but very low on the "to finish" list
 
 res = requests.get(Website1)
 res1 = res.text
